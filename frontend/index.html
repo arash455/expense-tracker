@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker – Log in</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="auth-page">
+    <div class="card auth-card">
+      <h1>💰 Expense Tracker</h1>
+      <p class="muted" style="text-align:center">Track your spending in one place.</p>
+
+      <div class="tabs">
+        <button type="button" class="tab active" data-tab="login">Log in</button>
+        <button type="button" class="tab" data-tab="register">Create account</button>
+      </div>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="full">Log in</button>
+      </form>
+
+      <form id="register-form" hidden>
+        <div class="field">
+          <label for="reg-name">Name</label>
+          <input id="reg-name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="reg-email">Email</label>
+          <input id="reg-email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="reg-password">Password <span class="muted">(min 6 characters)</span></label>
+          <input id="reg-password" name="password" type="password" minlength="6" required autocomplete="new-password">
+        </div>
+        <button type="submit" class="full">Create account</button>
+      </form>
+
+      <p id="message" class="message error"></p>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
