@@ -1,6 +1,6 @@
 // ===== EDIT THIS AFTER YOU DEPLOY THE BACKEND =====
 // Replace the Render address below with your own backend URL (no slash at the end).
-const PRODUCTION_API_URL = 'https://backendtest-g0cw.onrender.com';
+const PRODUCTION_API_URL ='https://expense-tracker-w117.onrender.com';;
 
 // Currency used to display amounts (e.g. 'USD', 'EUR', 'AFN', 'PKR', 'GBP')
 const CURRENCY = 'USD';
